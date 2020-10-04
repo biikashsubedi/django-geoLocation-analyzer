@@ -15,8 +15,8 @@ def distance_calculate_view(request):
     geolocator = Nominatim(user_agent='measure')
 
     ip_ = get_ip_address(request)
-    print(ip_)
-    ip = '103.28.86.193'
+    # print(ip_)
+    ip = ip_
     country, city, lat, lon = get_geo(ip)
 
     location = geolocator.geocode(city)
